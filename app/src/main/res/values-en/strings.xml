@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tobat</string>
+    <string name="appwidget_text">Subuh</string>
+    <string name="appwidget_text2">Dzuhur</string>
+    <string name="appwidget_text3">Ashar</string>
+    <string name="appwidget_text4">Magrib</string>
+    <string name="appwidget_text5">Isya</string>
+    <string name="kompasactivity_name">Qibla Compat</string>
+    <string name="nav_header_subtitle">Whatever the conditions, pray!</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_send">Send</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_title">Tobat App</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="widgetAshar">00:00</string>
+    <string name="widgetDzuhur">00:00</string>
+    <string name="widgetIsya">00:00</string>
+    <string name="widgetMagrib">00:00</string>
+    <string name="widgetSubuh">00:00</string>
+    <string name="cari">Search</string>
+    <string name="cari_kota">Search the city</string>
+    <string name="cari_kota2">Search the city</string>
+    <string name="jadwal_shalat">Prayer Schedule</string>
+    <string name="lokasi_saya">My Location</string>
+    <string name="tanggal">Date</string>
+    <string name="yogyakarta">Yogyakarta</string>
+    <string name="add_widget">Add widget</string>
+    <string name="action_settings">Settings</string>
+    <string name="beranda">Home</string>
+    <string name="kompas_kiblat2">Qibla Compat</string>
+    <string name="kota_lain2">Another City</string>
+    <string name="pengaturan2">Settings</string>
+</resources>
