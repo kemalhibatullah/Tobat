@@ -229,9 +229,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.kompas) {
             Intent intent2 = new Intent(this, KompasActivity.class);
             startActivity(intent2);
-        } else if (id == R.id.pengaturan){
-
         }
+//        else if (id == R.id.pengaturan){
+//
+//        }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

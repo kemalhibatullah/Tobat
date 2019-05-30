@@ -2,30 +2,38 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.android.tobat">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
         android:name=".AppController"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_mosque"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_mosque"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
+        <receiver android:name=".NewAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
 
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name"/>
-
-        <activity android:name=".KotaLain"
-            android:label="@string/app_name"/>
-
-        <activity android:name=".KompasActivity"
-            android:label="@string/app_name"/>
-
+            android:label="@string/app_name" />
+        <activity
+            android:name=".KotaLain"
+            android:label="@string/app_name" />
+        <activity
+            android:name=".KompasActivity"
+            android:label="@string/app_name" />
         <activity
             android:name=".Splash"
             android:label="@string/app_name"

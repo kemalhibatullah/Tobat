@@ -8,26 +8,26 @@
         <item
             android:id="@+id/beranda"
             android:icon="@drawable/ic_home2"
-            android:title="Beranda" />
+            android:title="@string/beranda" />
         <item
             android:id="@+id/kotaLain"
             android:icon="@drawable/ic_map"
-            android:title="Kota Lain" />
+            android:title="@string/kota_lain2" />
         <item
             android:id="@+id/kompas"
             android:icon="@drawable/ic_compass"
-            android:title="Kompas Kiblat" />
+            android:title="@string/kompas_kiblat2" />
     </group>
 
-    <group
-        android:id="@+id/menu_bottom"
-        android:checkableBehavior="none">
+    <!--<group-->
+        <!--android:id="@+id/menu_bottom"-->
+        <!--android:checkableBehavior="none">-->
 
-        <item
-            android:id="@+id/pengaturan"
-            android:icon="@drawable/ic_settings2"
-            android:title="Pengaturan" />
-    </group>
+        <!--<item-->
+            <!--android:id="@+id/pengaturan"-->
+            <!--android:icon="@drawable/ic_settings2"-->
+            <!--android:title="@string/pengaturan2" />-->
+    <!--</group>-->
 
 
 </menu>
