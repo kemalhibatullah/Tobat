@@ -1,9 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KotaLain">
+    tools:context=".KotaLain"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_left_arrow"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="7dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:text="Cari Kota"
+            android:layout_gravity="center"/>
+
+    </android.support.v7.widget.Toolbar>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,31 +38,36 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/searchEt"
-                android:hint="Search Location"
                 android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="50dp"
                 android:layout_weight="2"
-                android:layout_height="wrap_content" />
+                android:hint="Cari Kota" />
             <Button
                 android:id="@+id/searchBtn"
-                android:text="search"
+                android:text="cari"
+                android:layout_marginTop="60dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:textColor="@color/white"
+                android:background="#33cccc"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:text="Location: "
-                android:textStyle="bold"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+
             <TextView
                 android:id="@+id/locationTv"
-                android:text="myLocation"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Lokasi Saya"
+                android:textSize="25dp"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -47,55 +76,61 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <TextView
-                android:text="Date: "
-                android:textStyle="bold"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+
             <TextView
                 android:id="@+id/dateTv"
-                android:text="myDate"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="Tanggal"
+                android:textSize="15dp"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <TextView
-            android:text="Prayer Timings"
+            android:text="Jadwal Shalat"
             android:textAlignment="center"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/black"
             android:textStyle="bold"
-            android:textSize="30sp"
+            android:textSize="25sp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingLeft="220px">
             <TextView
-                android:text="Fajr :"
+                android:text="Subuh :"
                 android:textStyle="bold"
                 android:layout_weight="1"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/fajrTv"
-                android:text="Fajr"
+                android:text="Subuh"
                 android:layout_weight="1"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingLeft="220px">
             <TextView
-                android:text="Dhuhr :"
+                android:text="Dzuhur :"
                 android:textStyle="bold"
                 android:layout_weight="1"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/dhuhrTv"
-                android:text="Dhuhur"
+                android:text="Dzuhur"
+                android:layout_marginBottom="10dp"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
@@ -103,53 +138,62 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingLeft="220px">
             <TextView
-                android:text="Ashr : "
+                android:text="Ashar : "
                 android:textStyle="bold"
                 android:layout_weight="1"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/asrTv"
-                android:text="Asr"
+                android:text="Ashar"
                 android:layout_weight="1"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingLeft="220px">
             <TextView
                 android:text="Maghrib :"
                 android:textStyle="bold"
                 android:layout_weight="1"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/maghribTv"
                 android:text="Maghrib"
                 android:layout_weight="1"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingLeft="220px">
             <TextView
                 android:text="Isya :"
                 android:textStyle="bold"
                 android:layout_weight="1"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <TextView
                 android:id="@+id/ishaTv"
                 android:text="Isya"
                 android:layout_weight="1"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
         </LinearLayout>
     </LinearLayout>
 
-</ScrollView>
+</RelativeLayout>

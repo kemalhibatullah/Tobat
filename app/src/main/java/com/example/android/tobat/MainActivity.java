@@ -52,6 +52,7 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener{
 
@@ -226,7 +227,8 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(getApplicationContext(), KotaLain.class);
             startActivity(intent);
         } else if (id == R.id.kompas) {
-
+            Intent intent2 = new Intent(this, KompasActivity.class);
+            startActivity(intent2);
         } else if (id == R.id.pengaturan){
 
         }
